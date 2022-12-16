@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #000;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.nav-item,
+a {
+    padding: 0 10px;
+    text-decoration: none;
+    list-style: none;
+    color: #ffff;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.nav-item,
+a:hover {
+    color: #bb1111;
+}
+
+.nav-item,
+a::selection {
+    background-color: #000000;
+}
+
+.header-logo {
+    color: #bb1111;
+    cursor: pointer;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 700;
+}
+
+.header-logo::selection {
+    color: #fff;
+}
+
+.section-hero {
+    width: 100%;
+    height: 100vh;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    margin-left: 200px;
+    transition: .3s;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 50px;
+    box-shadow: 0px 0px 9px 0px #000000;
+}
+
+.hero-texts {
+    width: 700px;
+    padding: 50px 30px;
+}
+
+.hero-image:hover {
+    background-color: #bb1111;
+}
+
+.hero-img {
+    width: 700px;
+    display: block;
+}
+
+.hero-title {
+    color: #000;
+    padding-bottom: 10px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+}
+
+.hero-title::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+.hero-text::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+.hero-text {
+    color: rgb(26, 26, 26);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.hero-btn {
+    margin-top: 25px;
+    background-color: #000;
+    border: 0px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.btn-a {
+    font-size: 1.3rem;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn-a:hover {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.hero-btn:hover {
+    background-color: #bb1111
+}
+
+.gallery-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 125px;
+    gap: 20px;
+}
+
+.header-box-gallery {
+    position: relative;
+}
+
+.gallery-img {
+    width: 600px;
+}
+
+.container {
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.containerbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem;
+    font-size: 1.1rem;
+    padding: 2rem;
+    height: 400px;
+    width: 350px;
+    box-shadow: 1px -1px 53px -2px rgba(0, 0, 0, 0.79);
+}
+
+.box-title {
+    font-size: 2.5rem;
+    font-family: 'Russo One', sans-serif;
+    padding: 0 0 10px 0;
+    color: #bb1111;
+}
+
+.box-p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-p::selection {
+    color: #ff0000;
+}
+
+.box-title::selection {
+    color: #fff;
+}
+
+.footer-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    margin-top: 3rem;
+
+}
+
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.footer-span {
+    color: #bb1111;
+    font-family: 'Russo One', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer-span:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+@media screen and (max-width:425px) {
+    .section-hero {
+        padding-left: 0px;
+    }
+
+    .header-logo {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .nav-item a {
+        font-size: .9rem;
+        padding: 7px;
+    }
+
+    .hero-title {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .hero-text {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .hero-img {
+        width: 350px;
+    }
+
+    .hero-image {
+        width: 350px;
+        display: block;
+        position: relative;
+        top: -100px;
+    }
+
+    .footer-text,
+    .footer-span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header-box {
+        width: 100%;
+        align-items: center;
+        padding: 1rem;
+        margin-left: 0px;
+    }
+
+    .gallery-img {
+        width: 100%;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        display: block;
+        position: relative;
+        left: -180px;
+        top: 10px;
+    }
+
+    .hero-title {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .section-hero {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .header-box {
+        width: 100%;
+        align-items: center;
+        padding: 1rem;
+        margin-left: 0px;
+    }
+
+    .header-logo {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .nav-item a {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .hero-title {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .hero-text {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .hero-img {
+        width: 300px;
+    }
+
+    .hero-image {
+        width: 300px;
+        display: block;
+        position: relative;
+        right: 150px;
+    }
+
+    .hero-texts {
+        width: 100%;
+    }
+
+    .hero-btn {
+        position: relative;
+    }
+
+    .btn-a {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .nav-item,
+    a {
+        font-size: 1rem;
+        font-weight: 700;
+        transition: .3s;
+    }
+
+    .gallery-img {
+        width: 300px;
+    }
+
+    .footer-text,
+    .footer-span {
+        font-size: .8rem;
+    }
+}
